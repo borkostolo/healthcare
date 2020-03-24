@@ -1,0 +1,3 @@
+X_val= validation_data.iloc[:,1:validation_data.shape[1]-1]
+y_val= validation_data['readmitted_yes']  
+X_val_stand = StandardScaler().fit_transform(X_val) 
